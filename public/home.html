@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .bg-image {
+
+      background-image: url("pc_image.jpg");
+
+
+      filter: blur(15px);
+      -webkit-filter: blur(8px);
+
+
+      height: 100%;
+
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+
+    .bg-text {
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      border: 3px solid #f1f1f1;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      height: 20%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .bg-text-about {
+      < !-- background-color: rgb(0, 0, 0);
+      -->
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/opacity/see-through */
+      color: white;
+      < !-- font-weight: bold;
+      -->border: 0.5px solid #f1f1f1;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      height: 20%;
+      padding: 20px;
+      text-align: left;
+      < !-- color: black;
+      -->
+    }
+
+    .bg-text-Featuers {
+      < !-- background-color: rgb(0, 0, 0);
+      -->
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/opacity/see-through */
+      color: white;
+      < !-- font-weight: bold;
+      -->border: 0.5px solid #f1f1f1;
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      height: 20%;
+      padding: 20px;
+      text-align: left;
+      < !-- color: black;
+      -->
+    }
+
+    .bg-text-button {
+      < !-- background-color: rgb(0, 0, 0);
+      -->
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/opacity/see-through */
+      color: white;
+      < !-- font-weight: bold;
+      -->border: 0.5px solid #f1f1f1;
+      position: absolute;
+      top: 95%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      height: 20%;
+      padding: 20px;
+      text-align: center;
+
+    }
+
+    .btn-primary {
+      width: 200px;
+      height: 60px;
+      border-radius: 4px;
+
+    }
+
+    button:hover {
+      background-color: #D5D6D7;
+    }
+
+    footer {
+      color: white;
+      color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      margin-bottom: 2px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="bg-image">
+
+  </div>
+
+  <div class="bg-text">
+
+    <h1 style="font-size:50px">TO-DO LIST</h1>
+
+  </div>
+  <div class="bg-text-about">
+
+    <h1 style="font-size:30px">About</h1>
+    <h2>To-Do List is smart add functionality allows you to quickly <br>
+      add a task and it's details all at once.</h2>
+
+  </div>
+
+  <div class="bg-text-Featuers">
+
+    <h1 style="font-size:30px">Featuers</h1>
+    <ul style="text-align:left">
+      <li>
+        <h2> You can personlize your todolist.</h2>
+      </li>
+      <li>
+        <h2> Time feature in this list which allows to keep time.</h2>
+      </li>
+      <li>
+        <h2> We can create multiple Todo lists.</h2>
+      </li>
+    </ul>
+
+  </div>
+  <div class="bg-text-button">
+    <form class="" action="/" method="post">
+      <button class="btn-primary" type="submit" name="button">
+        <h3>Create</h3>
+      </button>
+    </form>
+
+
+  </div>
+  <script type="text/javascript">
+    const name = prompt("Enter Your Name:");
+    alert("Welcome " + name + "!");
+  </script>
+</body>
+<footer>
+
+  Made with ❤️ by Aditi & Sakshi
+
+</footer>
+
+</html>

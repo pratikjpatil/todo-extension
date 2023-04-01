@@ -1,0 +1,171 @@
+html {
+  background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(65deg, #3B4D57 50%, #E4E9FD 50%);
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+}
+
+h1 {
+  color: #fff;
+  padding: 10px;
+}
+
+.box {
+  max-width: 500px;
+  margin: 60px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.newlist{
+  position: absolute;
+  right: 80px;
+  top: 60px;
+  /* box-shadow: inset 0 -3px 8px 0 #3B4D57; */
+}
+.newListInput{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+#heading {
+  background-color: #3B4D57;
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #3B4D57;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+form.item {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #3B4D57;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 1;
+
+}
+
+/* .createNewList {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 1px solid red;
+} */
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #3B4D57;
+}
+input[type="time"] {
+  text-align: left;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+
+
+}
+
+input[type="time"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #3B4D57;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.nameAndTime{
+  display: flex;
+  justify-content:space-between;
+  align-items:  center;
+  width: 100%;
+}
+.time{
+  display: flex;
+}
+
+/* Show dbs button */
+
+.animated-button {
+  position: relative;
+  display: inline-block;
+  /* padding: 15px 30px; */
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  margin-left: 87%;
+  
+}
+
+.expense{
+  background-color: #b8c0ed;
+  border: none;
+  width: 190px;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 37rem;
+  border-radius: 12px;
+}

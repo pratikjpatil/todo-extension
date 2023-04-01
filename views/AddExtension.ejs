@@ -1,0 +1,37 @@
+<%- include("header") %>
+<div class="container d-flex flex-column justify-content-center py-5">
+    <h1 class="text-center mb-4">Add Extension</h1>
+  
+    <form class="AddExtension-page text-center" action="/AddExtension/Extension" method="POST">
+      <h4>Add the bill name and bill amount as shown below</h4>
+      <div class="d-flex justify-content-center">
+        <h4>Home Rent : 1500</h4>
+
+      </div>
+      <div class="d-flex justify-content-center mt-3">
+        <input type="text" name="taxName" class="form-control mr-3" style="width: 200px;">
+        <p style="width: 50px;">:</p>
+        <input type="text" name="taxValue" class="form-control ml-3" style="width: 200px;">
+      </div>
+  
+      <div class="d-flex justify-content-center mt-4">
+        <button class="button-extension add-more btn btn-primary" type="submit">+ Add More</button>
+      </div>
+    </form>
+  
+    <div class="row py-4 justify-content-center">
+      <div class="col-md-10 mx-auto text-center">
+        <form action="/create" method="GET" class="d-inline-block">
+          <button class="btn btn-primary" type="submit" style="margin-right: 5px;">Home</button>
+        </form>
+  
+        <form action="/extension/edit" method="GET" class="d-inline-block">
+          <button class="btn btn-primary" type="submit" style="margin-right: 5px;">Edit</button>
+        </form>
+  
+        <form action="/extension/showall" method="GET" class="d-inline-block">
+          <button class="btn btn-primary" type="submit" style="margin-right: 5px;">Show</button>
+        </form>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+<%- include("header") -%>
+
+<div class="container">
+  <div class="box" id="heading">
+    <h1><%= listTitle %></h1>
+  </div>
+
+  <div class="newlist">
+    <form class="" action="/customroute" method="post">
+      <input type="text" name="newListInput" value="" placeholder="Create new list here..." class="newlistBtn">
+      <button type="submit" name="createNewList">+</button>
+    </form>
+    <form action="/showList/db" method="post">
+      <button id="showDB" class="animated-button" type="submit">DB</button>
+    </form>
+  </div>
+
+  <div class="box">
+    <% newListItems.forEach(function(item){ %>
+      <form action="/delete" method="post">
+        <div class="item">
+          <input type="checkbox" name="checkbox" value="<%= item._id %>" onChange="this.form.submit()">
+          <div class="nameAndTime">
+            <p><%= item.name %></p>
+            <div class="time">
+              <% if(item.time && item.time2){ %>
+                <p><%= new Date(item.time).toLocaleTimeString() %></p>
+                <p>to</p>
+                <p><%= new Date(item.time2).toLocaleTimeString() %></p>
+              <% } %>
+            </div>
+          </div>
+        </div>
+        <input type="hidden" name="listName" value="<%= listTitle %>">
+      </form>
+    <% }) %>
+
+    <form class="item" action="/create" method="post">
+      <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+      <input type="datetime-local" name="newTime1" placeholder="" autocomplete="off">
+      <input type="datetime-local" name="newTime2" placeholder="" autocomplete="off">
+      <button type="submit" name="list" value="<%= listTitle %>">+</button>
+    </form>
+  </div>
+
+  <div class="mx-auto text-center">
+    <form class="item" action="/AddExtension/Extension" method="get">
+      <button class="" type="submit">Add Extension</button>
+    </form>
+  </div>
+</div>
+
+<%- include("footer") -%>

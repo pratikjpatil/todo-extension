@@ -1,0 +1,34 @@
+<%- include("header") %>
+<div class="container pt-5 d-flex flex-column justify-content-center text-center">
+  <h1 class="mb-4">EDIT Extension</h1>
+  <h4>Edit the data</h4>
+
+  <% extensions.forEach(function(extension){ %>
+  <form action="/extension/edit" method="POST" class="row justify-content-center align-items-center mt-4">
+    <div class="d-flex justify-content-center mt-3">
+          <input type="text" name="taxName" value="<%=extension.taxName%>" class="form-control" style="width: 200px;">
+          <p style="width: 50px;">:</p>
+      
+          <input type="text" name="taxValue" value="<%=extension.taxValue%>" class="form-control" style="width: 200px; margin-right: 15px;">
+
+          <button class="btn btn-warning" name="taxID" value="<%=extension._id%>" onChange="this.form.submit()">Update</button>
+      </div>
+  </form>
+  <%})%>
+
+  <div class="row py-4 justify-content-center">
+      <div class="col-md-10 mx-auto text-center">
+          <form action="/create" method="GET" class="d-inline-block">
+              <button class="btn btn-primary mr-3" type="submit">Home</button>
+          </form>
+
+          <form action="/AddExtension/Extension" method="GET" class="d-inline-block">
+              <button class="btn btn-primary mr-3" type="submit">Add more</button>
+          </form>
+
+          <form action="/extension/showall" method="GET" class="d-inline-block">
+              <button class="btn btn-primary" type="submit">Show</button>
+          </form>
+      </div>
+  </div>
+</div>

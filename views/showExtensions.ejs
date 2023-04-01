@@ -1,0 +1,47 @@
+<%- include("header") -%>
+<div class="container pt-5 text-center">
+    <h2>Show</h2>
+
+    <div class="row py-4">
+        <div class="col-md-10 mx-auto">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Value</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% extensions.forEach(function(extension){ %>
+                    <tr>
+                        <td><%= extension.taxName %></td>
+                        <td><%= extension.taxValue %></td>
+                        <td class="text-center">
+                            <form action="/extension/delete" method="post" class="d-inline-block">
+                                <button class="btn btn-danger" name="_ID" value="<%=extension._id%>" onChange="this.form.submit()">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <%})%>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="row py-4">
+        <div class="col-md-10 mx-auto text-center">
+            <form action="/create" method="GET" class="d-inline-block">
+                <button class="btn btn-primary" type="submit" style="margin-right: 5px;">Home</button>
+            </form>
+
+            <form action="/AddExtension/Extension" method="GET" class="d-inline-block">
+                <button class="btn btn-primary" type="submit" style="margin-right: 5px;">Add more</button>
+            </form>
+
+            <form action="/extension/edit" method="GET" class="d-inline-block">
+                <button class="btn btn-primary" type="submit" style="margin-right: 5px;">Edit</button>
+            </form>
+        </div>
+    </div>
+</div>
