@@ -1,4 +1,4 @@
-html {
+.allcontent {
   background-color: #E4E9FD;
   background-image: -webkit-linear-gradient(65deg, #3B4D57 50%, #E4E9FD 50%);
   min-height: 1000px;
@@ -6,12 +6,12 @@ html {
 }
 
 h1 {
-  color: #fff;
+  color: white;
   padding: 10px;
 }
 
 .box {
-  max-width: 500px;
+  max-width: 520px;
   margin: 60px auto;
   background: white;
   border-radius: 5px;
@@ -22,7 +22,7 @@ h1 {
   position: absolute;
   right: 80px;
   top: 60px;
-  /* box-shadow: inset 0 -3px 8px 0 #3B4D57; */
+
 }
 .newListInput{
   width: 100%;
@@ -81,12 +81,7 @@ button {
 
 }
 
-/* .createNewList {
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
-  border: 1px solid red;
-} */
+
 
 input[type="text"] {
   text-align: center;
@@ -147,12 +142,13 @@ footer {
 .animated-button {
   position: relative;
   display: inline-block;
-  /* padding: 15px 30px; */
+  border-radius: 12px;
   font-size: 18px;
   text-align: center;
   text-decoration: none;
   overflow: hidden;
-  margin-left: 87%;
+  margin-top: 15px;
+  margin-left: 86%;
   
 }
 
@@ -167,5 +163,19 @@ footer {
   display: inline-block;
   font-size: 16px;
   margin-left: 37rem;
+  border-radius: 12px;
+}
+.button-extension{
+  width: 105px;
+  border-radius: 12px;
+  margin-left: 36rem;
+  background-color: #E0E5FA;
+}
+.plusebtn{
+  border-radius: 12px;
+}
+
+.btn-newtodo{
+  margin-left: 4px;
   border-radius: 12px;
 }
