@@ -169,7 +169,8 @@ footer {
   width: 105px;
   border-radius: 12px;
   margin-left: 36rem;
-  background-color: #E0E5FA;
+  background-color: #3B4D57;
+  border: 2px solid white;
 }
 .plusebtn{
   border-radius: 12px;
