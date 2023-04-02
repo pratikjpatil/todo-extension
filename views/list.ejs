@@ -1,14 +1,16 @@
+<div class="allcontent">
 <%- include("header") -%>
 
 <div class="container">
   <div class="box" id="heading">
-    <h1><%= listTitle %></h1>
+    <h1 style="color: #fff;"><%= listTitle %></h1>
   </div>
 
+  
   <div class="newlist">
     <form class="" action="/customroute" method="post">
       <input type="text" name="newListInput" value="" placeholder="Create new list here..." class="newlistBtn">
-      <button type="submit" name="createNewList">+</button>
+      <button class="plusebtn" type="submit" name="createNewList">+</button>
     </form>
     <form action="/showList/db" method="post">
       <button id="showDB" class="animated-button" type="submit">DB</button>
@@ -39,15 +41,16 @@
       <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
       <input type="datetime-local" name="newTime1" placeholder="" autocomplete="off">
       <input type="datetime-local" name="newTime2" placeholder="" autocomplete="off">
-      <button type="submit" name="list" value="<%= listTitle %>">+</button>
+      <button class="btn-newtodo" type="submit" name="list" value="<%= listTitle %>">+</button>
     </form>
   </div>
 
   <div class="mx-auto text-center">
     <form class="item" action="/AddExtension/Extension" method="get">
-      <button class="" type="submit">Add Extension</button>
+      <button class="button-extension" type="submit">Add Extension</button>
     </form>
   </div>
 </div>
-
 <%- include("footer") -%>
+</div>
+
